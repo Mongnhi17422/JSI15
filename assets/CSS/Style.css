@@ -3,6 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 :root{
     --heading-color: #b01323;
     --width-logo: 200px;
@@ -237,7 +253,418 @@
 
 
 
+/* Introduce */
 
+.container .title {
+    width: 100%;
+    height: 90px;
+    text-align: center !important;
+    border-bottom: 1px solid rgba(240, 240, 240, 240);
+    line-height: 90px;
+}
+
+.container .title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.container__content{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 15% 50px;
+    text-align: justify;
+}
+
+.container__content-list {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.container__content-list-items {
+    font-size: 14px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.banner-foot {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(240, 240, 240); 
+    
+}
+
+.banner-foot .banner-foot-wrapper {
+    width: 80%;
+    height: 110px;
+    margin: 0 20% ;
+}
+
+.banner-foot .banner-foot-wrapper img {
+    margin-top: 25px;
+}
+
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #111;
+    color: white;
+}
+
+.footer .footer-wrapper {
+    width: 80%;
+    margin: 0 11%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer .footer-wrapper .content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.footer .footer-wrapper .content ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer .footer-wrapper .content ul li i {
+    margin-right: 10px;
+    color: var(--heading-color);
+}
+
+.footer .footer-wrapper .content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-wrapper .content ul li:hover, 
+.footer .footer-wrapper .content ul li a:hover {
+    color: var(--heading-color);
+}
+
+
+
+/* News */
+.container__content-news {
+    width: 80%;
+    margin: 3% 15%;
+}
+
+.title-news {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--heading-color) ;
+}
+
+.box-news {
+    display: flex;
+}
+
+.box-news img {
+    margin-bottom: 30px;
+}
+
+.content-box-news {
+    position: absolute;
+    left: 40%;
+    text-align: justify;
+    margin-top: 25px;
+    margin-right: 15%; 
+    
+}
+
+.content-box-news h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.content-box-news h4:hover,
+.content-box-news p:hover {
+    color: var(--heading-color);
+}
+
+
+/* Contact */
+
+.wrapper-form-contact {
+    width: 100%;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contact {
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-contact-content h4{
+    font-size: 20px;
+    color: rgb(252, 59, 25);
+    margin: 10px 0;
+}
+
+
+label {
+    display: block;
+}
+
+.form-contact-content #box-form form input {
+    width: 600px;
+    height: 30px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(120, 111, 111);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.form-contact-content #box-form form #message {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    position: absolute;
+    
+}
+
+
+.form-contact-content #box-form form #message::placeholder {
+    position: absolute;
+    top: 5px;
+}
+
+#box-form  form .submit input {
+    width: 100px !important;
+    padding-right: 10px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 120px;
+}
+
+#box-form  form .submit input:hover {
+    color: white;
+    background-color: var(--heading-color);
+    cursor: pointer;
+}
+
+
+.infor-contact-form ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    
+}
+
+.infor-contact-form ul li a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 10px;
+}
+
+
+.infor-contact-form h3 {
+    font-size: 20px;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.infor-contact-form .icon {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.6;
+}
+
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: green;
+}
+
+
+
+
+
+/* SignUp */  
+/* Login */
+
+
+.signup, .login {
+    width: 50%;
+    height: 500px;
+    margin: 30px 25%;
+    display: flex;
+    border: 1px solid var(--heading-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.benefit {
+    width: 20%;
+    height: 500px ;
+    background-color: var(--heading-color);
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    right: 25%;
+}
+
+.benefit h3 {
+    margin: 20px 10px 30px 10px;
+    
+}
+
+.benefit ul li {
+    list-style: none;
+    margin: 25px 15px;
+}
+
+.benefit a {
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-left: 80px;
+}
+
+.benefit a:hover {
+    background-color: white;
+    color: var(--heading-color);
+    border-color: var(--heading-color);
+}
+
+.form {
+    margin: 20px 30px;
+}
+
+.form .form-group {
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.form .form-group input {
+    width: 350px;
+    height: 30px;
+}
+
+.form .form-submit-signup {
+    margin: 30px 0;
+    width: 350px;
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--heading-color);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.form .form-submit-signup:hover {
+    border-color: var(--heading-color);
+    color: var(--heading-color);
+    background-color: white;
+}
+
+.form .different p {
+    text-align: center;
+    z-index: 10;
+}
+
+
+.different .line-login {
+    width: 350px;
+    border-top: 1px solid rgb(218, 214, 214);
+    position: relative;
+    bottom: 8px;
+    z-index: -7;
+}
+
+.form .different .app{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.form .different .app img {
+    margin-left: 30px;
+}
+
+.form .different .app img:hover {
+    cursor: pointer;
+}
+
+
+.different .forget {
+    margin-top: 50px;
+}
+
+
+.text {
+    margin-top: 50px;
+}
+
+.text p {
+    margin-top: 20px;
+    margin-bottom: 15px;
+   
+}
+
+.button-forget {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-forget .form-submit-forget {
+    width: 170px;
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.button-forget .form-submit-forget:hover {
+    color: var(--heading-color);
+    background-color: white;
+    border-color: var(--heading-color);
+    cursor: pointer;
+}
+
+
+.button-forget .form-unsubmit-forget {
+    width: 170px;
+    margin-right: 28px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: var(--heading-color);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.button-forget .form-unsubmit-forget:hover {
+    color: var(--heading-color);
+    border-color: var(--heading-color);
+    background-color: white;
+}
 
 
 

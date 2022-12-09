@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="./assets/CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="./Image/logo-web.jpg" />
+</head>
+<body>
+    
+    <div id="header">
+        <div id="connect-our">
+            <div class="connect">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><a class="link" href="tel:+ 19006750">+ 19006750</a></li>
+                    <li class="liner-left"><i class="fa-regular fa-envelope"></i><a class="link" href="mailto:support@sapo.vn">support@sapo.vn</a></li>
+                </ul>
+            </div>
+
+            <div class="connect">
+                <ul>
+                    <li><i class="fa-solid fa-lock-open"></i><a class="link" href="./Login.html">Đăng Nhập</a></li>
+                    <li><i class="fa-solid fa-user"></i><a class="link" href="./SignUp.html">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="brand-name">
+            <div class="logo-brand"><img src="./Image/Logo_brand.png" alt="Brand_Name"></div>
+            <div class="container-header">
+                <div class="content-header">
+                    <div class="logo"><i class="fa-sharp fa-solid fa-paper-plane"></i></div>
+                    <div class="content">
+                        <h3>GIAO HÀNG MIỄN PHÍ</h3>
+                        <p>Cho hóa đơn trên 1 triệu</p>
+                    </div>
+                </div>
+    
+                <div class="content-header">
+                    <div class="logo"><i class="fa-solid fa-recycle"></i></div>
+                    <div class="content">
+                        <h3>ĐỔI TRẢ MIỄN PHÍ</h3>
+                        <p>Trong vòng 3 ngày</p>
+                    </div>
+                </div>
+    
+                <div class="content-header">
+                    <div class="logo"><i class="fa-solid fa-gift"></i></div>
+                    <div class="content">
+                        <h3>GÓI QUÀ MIỄN PHÍ</h3>
+                        <p>Cho tất cả các sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="navbar">
+           <div class="nav">
+            <ul>
+                <li><a href="./Home.html">Trang chủ</a></li>
+                <li><a href="./Introduce.html">Giới thiệu</a></li>
+                <li>
+                    <a href="./Products.html">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="./gift-for-men.html">Quà tặng nam</a>
+                            <ul class="mini-nav">
+                                <li><a href="./gift-for-boyfriend.html">Tặng bạn nam</a></li>
+                                <li><a href="./gift-for-father.html">Tặng bố</a></li>
+                                <li><a href="./gift-for-grandfather.html">Tặng ông</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./gift-for-women.html">Quà tặng nữ</a>
+                            <ul class="mini-nav">
+                                <li><a href="./gift-for-girlfriend.html">Tặng bạn nữ</a></li>
+                                <li><a href="./gift-for-mother.html">Tặng mẹ</a></li>
+                                <li><a href="./gift-for-grandmother.html">Tặng bà</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="new-products.html">Sản phẩm mới</a>
+                            <ul class="mini-nav">
+                                <li><a href="./new.html">Hàng mới về</a></li>
+                                <li><a href="./selling.html">Hàng bán chạy</a></li>
+                                <li><a href="./promotion.html">Hàng khuyến mãi</a></li>
+                            </ul>
+                        </li>
+
+                        <img src="./Image/image_mega_1.webp" width="400px" alt="">
+
+                    </ul>
+                </li>
+                <li><a href="News.html">Tin tức</a></li>
+                <li><a href="Contact.html">Liên hệ</a></li>
+            </ul>
+            </div>
+           
+           <div class="find">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i>
+           </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="title">
+            <h1>Đăng ký tài khoản</h1>
+        </div>
+
+        <div class="signup">
+
+            <form action="" method="POST" class="form" id="form-signup">
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Họ và tên</label>
+                    <input id="fullname" name="fullname"  type="text" placeholder="VD: Lại Thị Mộng Nhi">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" id="email" placeholder="VD: mongnhi3644@gmail.com">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input type="text" name="password" id="password" placeholder="Nhập mât khẩu">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password-confirmation" class="form-label">Nhập lại mật khẩu</label>
+                    <input type="text" name="password-confirmation" id="password-confirmation" placeholder="Nhập lại mật khẩu">
+                    <span class="form-message"></span>
+                </div>
+                <button class="form-submit-signup">Đăng ký</button>
+
+                <div class="different">
+                    <p>Hoặc đăng nhập bằng</p>
+                    <div class="line-login"></div>
+                    <div class="app">
+                        <img src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg" alt="">
+                        <img src="https://bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg" alt="">
+                    </div>
+                </div>
+            </form>
+    
+            <div class="benefit">
+                <h3>Quyền lợi với thành viên</h3>
+                <ul>
+                    <li>Vận chuyển siêu tốc</li>
+                    <li>Sản phẩm đa dạng</li>
+                    <li>Đổi trả dễ dàng</li>
+                    <li>Tích điểm đổi quà</li>
+                    <li>Được giản giá cho lần mua tiếp theo lên đến 10%</li>
+                </ul>
+                <a href="./Login.html">Đăng nhập</a>
+            </div>
+
+            
+            
+        </div>
+
+    </div>
+    
+
+
+
+    <div class="banner-foot">
+        <div class="banner-foot-wrapper">
+            <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/img_brand_1.jpg?1665393413524" alt="">
+            <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/img_brand_2.jpg?1665393413524" alt="">
+            <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/img_brand_3.jpg?1665393413524" alt="">
+            <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/img_brand_4.jpg?1665393413524" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class=" content contact-footer">
+            <h2>Liên hệ với chúng tôi</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Tầng 6 - 266 Đội Cấn - Liễu Giai - Ba Đình, Hà Nội</li>
+                <li><i class="fa-solid fa-phone"></i><a href="tel:1900 6750">1900 6750</a></li>
+                <li><i class="fa-regular fa-envelope"></i><a href="mailto:support@sapo.vn">support@sapo.vn</a></li>
+            </ul>
+            <img src="./Image/Logo_brand.png" width="150px" alt="">
+        </div>
+
+        <div class="content infor">
+            <h2>Thông tin</h2>
+            <ul>
+                <li><a href="./Home.html">Trang chủ</a></li>
+                <li><a href="./Introduce.html">Giới thiệu</a></li>
+                <li><a href="./Products.html">Sản phẩm</a></li>
+                <li><a href="./News.html">Tin tức</a></li>
+                <li><a href="./Contact.html">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="content policy">
+            <h2>Chính sách</h2>
+            <ul>
+                <li><i class="fa-solid fa-play"></i><span>Chính sách thanh toán</span></li>
+                <li><i class="fa-solid fa-play"></i><span>Chính sách bảo hành</span></li>
+                <li><i class="fa-solid fa-play"></i><span>Chính sách đổi trả hàng</span></li>
+                <li><i class="fa-solid fa-play"></i><span>Chính sách vận chuyển</span></li>
+                <li><i class="fa-solid fa-play"></i><span>Chính sách bảo mật</span></li>
+            </ul>
+            <img src="https://i0.wp.com/online.gov.vn/PublicImages/2015/08/27/11/20150827110756-dadangky.png" width="180px" alt="">
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/JAVASCRIPT/app.js"></script>
+
+</body>
+</html>
