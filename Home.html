@@ -10,6 +10,7 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="./Image/logo-web.jpg" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -64,8 +65,8 @@
             <ul>
                 <li><a href="./Home.html">Trang chủ</a></li>
                 <li><a href="./Introduce.html">Giới thiệu</a></li>
-                <li>
-                    <a href="./Products.html">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+                <li class="hover-subnav">
+                    <a  href="./Products.html">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="subnav">
                         <li>
                             <a href="./gift-for-men.html">Quà tặng nam</a>
@@ -103,9 +104,35 @@
             </ul>
             </div>
            
-           <div class="find">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i>
+            <div class="find">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a><i title="Giỏ hàng" class="fa-solid fa-cart-shopping"></i></a>
+
+                <div class="cart">
+                    <h2 class="cart-title">Giỏ hàng</h2>
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/products/pcr15-15h180-enviro-sq-1b878c62-96eb-4c26-aa29-2e7ad36751de.jpg?v=1469440829000" width="95px" alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title">Ly rượu vang</div>
+                                <div class="cart-price">250.000</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <div class="cart-remove">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <div class="total-title">Tổng:</div>
+                        <div class="total-price">0</div>
+                    </div>
+
+                    <button type="button" class="btn-buy">Mua hàng</button>
+                    
+                        <i class="fa-solid fa-x" id="close-cart"></i>
+                </div>
            </div>
         </div>
 
@@ -127,19 +154,109 @@
             </div>
         </div>
 
-        <div class="product-garniture">
-            <div class="title"></div>
-        </div>
 
         <div class="product-garniture">
-            <div class="title"></div>
+            <div class="title-b">
+                <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/icons-title-top.png?1665393413524" alt="">
+                <a href="./Products.html" class="link-product">
+                    <h4>Tất cả</h4>
+                    <h3>Sản phẩm</h3>
+                </a>
+                <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/icons-title-bottom.png?1665393413524" alt="">
+            </div>
+
+            <div class="box-shop">
+                <div class="boxsp">
+                    <div class="img"><img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/products/red15-15reh110r18-wdr-red-sq-d34ae858-97c2-4fb8-af8a-d3ca23ad23e2.jpg?v=1469440725000" alt=""></div>
+                    <p><span>460</span>.000vnd</p>
+                    <a href="#">Gối vuông I Love You</a> <br>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="boxsp">
+                    <div class="img"><img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/products/pcr13-00000012s170-0058419-w1-sq.jpg?v=1449479144000" alt=""></div>
+                    <p><span>100</span>.000vnd</p>
+                    <a href="#">Cốc sứ Reasons Why</a> <br>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="boxsp">
+                    <div class="img"><img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/products/red15-15reh55x-wdr-sq.jpg?v=1449201892470" alt=""></div>
+                    <p><span>195</span>.000vnd</p>
+                    <a href="#">Dây chuyền đá may mắn</a> <br>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="boxsp">
+                    <div class="img"><img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/products/pcr14-14h23-enviro-sq-ec5aa36f-2286-4fa6-bbc1-4206f9098bc9.jpg?v=1469440947310" alt=""></div>
+                    <p><span>90</span>.000vnd</p>
+                    <a href="#">Sticker Giáng Sinh đáng yêu</a> <br>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                </div>
+
+            </div>
         </div>
 
         <div class="feedback-home">
-
+            <img src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-circular-pattern-user-cartoon-avatar-png-image_4492893.jpg" width="120px" alt="">
+            <p>VŨ THU HUYỀN <span style="font-style: italic;">_ Giáo viên</span></p>
+            <p>"Tôi rất thích mua hàng tại Christmas_Gift, giá cả rất tốt và phù hợp. Tôi đã tiết kiệm được rất nhiều khi mua hàng</p>
+            <p>tại đây. Nhất là cách phục vụ tại đây rất ân cần và chu đáo."</p>
         </div>
 
-        <div class="news-home"></div>
+        <div class="news-home">
+            <div class="title-b">
+                <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/icons-title-top.png?1665393413524" alt="">
+                <a href="./News.html">
+                    <h4>Tin tức</h4>
+                    <h3>Mới nhất</h3>
+                </a>
+                <img src="https://bizweb.dktcdn.net/100/037/325/themes/880427/assets/icons-title-bottom.png?1665393413524" alt="">
+            </div>
+            <div class="news-home-post">
+                <div class="news-part">
+                    <a href="https://themes.sapo.vn/demo/noel">
+                        <div class="box-news-home"> 
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/articles/new-image-for-kids-carousel.jpg?v=1493362159473" width="300px" alt="">
+                            <div class="content-box-news-home">
+                                <h4>Bí quyết để tặng quà sáng tạo và lãng mạn</h4>
+                                <p>Bất cứ khi nào tặng hoa cũng đều lãng mạn, nhưng một cuộc khảo sát trên toàn quốc cho thấy phụ nữ cảm thấy hoa được tặng “không vì lý do nào cả”...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="news-part">
+                    <a href="https://themes.sapo.vn/demo/noel">
+                        <div class="box-news-home">
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/articles/tang-qua-giang-sinh-3.jpg?v=1493362397820" width="300px" alt="">
+                            <div class="content-box-news-home">
+                                <h4>Văn hóa và nghệ thuật tặng quà ý nghĩa</h4>
+                                <p>Vào dịp năm mới và các ngày lễ, các ngày kỷ niệm là lúc mọi người muốn tặng cho nhau những món quà ấm áp tình thương yêu. Ở đâu có cuộc sống ở đó ...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                
+    
+                <div class="news-part">
+                    <a href="https://themes.sapo.vn/demo/noel">
+                        <div class="box-news-home">
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/037/325/articles/top-10-merry-christmas-new-year-2014-wallpapers-09.jpg?v=1493362186977" width="300px" alt="">
+                            <div class="content-box-news-home">
+                                <h4>Một số gợi ý giúp chọn hoa làm quà tặng</h4>
+                                <p>Tặng hoa là gửi đi một thông điệp ý nghĩa thường mang lại cảm xúc của tình yêu và hạnh phúc bằng hương thơm và vẻ đẹp tuyệt đối của những bông hoa...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="banner-foot">
             <div class="banner-foot-wrapper">
