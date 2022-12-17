@@ -258,16 +258,27 @@
 /* Cart */
 
 
-.cart {
+ .cart {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0%;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
     background-color: aliceblue;
     box-shadow:  -2px 0 4px hsl(0 4% 15% / 10%);
+    /* transition: 0.3s; */
 }
+
+.cart.active {
+    right: 0;
+}
+
+#cart-icon:hover {
+    cursor: pointer;
+}
+
+
 
 .cart-title {
     text-align: center;
@@ -346,7 +357,7 @@
     color: var(--heading-color);
     background-color: white;
     border: 1px solid var(--heading-color);
-}
+} 
 
 #close-cart {
     position: absolute;

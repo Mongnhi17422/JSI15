@@ -135,16 +135,16 @@
     
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu</label>
-                    <input type="text" name="password" id="password" placeholder="Nhập mât khẩu">
+                    <input type="password" name="password" id="password" placeholder="Nhập mât khẩu">
                     <span class="form-message"></span>
                 </div>
     
                 <div class="form-group">
                     <label for="password-confirmation" class="form-label">Nhập lại mật khẩu</label>
-                    <input type="text" name="password-confirmation" id="password-confirmation" placeholder="Nhập lại mật khẩu">
+                    <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Nhập lại mật khẩu">
                     <span class="form-message"></span>
                 </div>
-                <button class="form-submit-signup">Đăng ký</button>
+                <button id="signUp" class="form-submit-signup">Đăng ký</button>
 
                 <div class="different">
                     <p>Hoặc đăng nhập bằng</p>
@@ -227,6 +227,15 @@
 </footer>
 
 <script src="./assets/JAVASCRIPT/app.js"></script>
-
+<script src="./assets/JAVASCRIPT/validator.js"></script>
+<script>
+    Validator ({
+        form: '#form-signup',
+        rules: [
+            Validator.isRequired('#fullname'),
+            Validator.isEmail('#email'),
+        ]
+    });
+</script>
 </body>
 </html>
