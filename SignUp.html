@@ -231,9 +231,14 @@
 <script>
     Validator ({
         form: '#form-signup',
+        errorSelector: '.form-message',
         rules: [
             Validator.isRequired('#fullname'),
             Validator.isEmail('#email'),
+            Validator.minLength('#password', 6),
+            Validator.isConfirmed('#password-confirmation', function () {
+                return document.querySelector('#form-signup #password').value;
+            }, 'Mật khẩu nhập lại không chính xác!')
         ]
     });
 </script>

@@ -219,8 +219,21 @@
     </div>
 </footer>
 <script src="./assets/JAVASCRIPT/app.js"></script>
-<!-- <script src="./assets/JAVASCRIPT/validator.js"></script> -->
-
+<script src="./assets/JAVASCRIPT/validator.js"></script>
+<script>
+    Validator ({
+        form: '#form-signup',
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#fullname'),
+            Validator.isEmail('#email'),
+            Validator.minLength('#password', 6),
+            Validator.isConfirmed('#password-confirmation', function () {
+                return document.querySelector('#form-signup #password').value;
+            }, 'Mật khẩu nhập lại không chính xác!')
+        ]
+    });
+</script>
 
 </body>
 </html>

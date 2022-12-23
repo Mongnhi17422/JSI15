@@ -738,10 +738,11 @@ label {
 
 .form {
     margin: 20px 30px;
+
 }
 
 .form .form-group {
-    margin-top: 10px;
+    margin-top: 25px;
     font-size: 16px;
     
 }
@@ -768,6 +769,10 @@ label {
     background-color: white;
 }
 
+.form-message {
+    color: red;
+}
+
 .form .different p {
     text-align: center;
     z-index: 10;
@@ -786,7 +791,7 @@ label {
     width: 180px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 
@@ -856,6 +861,14 @@ label {
     background-color: white;
 }
 
+.form-message {
+    position: absolute;
+    margin-top: 32px;
+    left: 27%;
+}
+
+
+
 
 
 /* Shop */
@@ -913,6 +926,8 @@ label {
     background-color: var(--heading-color);
     cursor: pointer;
 }
+
+
 
 
 
