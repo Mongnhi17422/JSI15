@@ -232,9 +232,10 @@
 }
 
 
-/* .hover-subnav:hover .subnav {
+.hover-subnav:hover .subnav {
     display: block;
-} */
+    display: flex;
+}
 
 
 .wrapper-home .banner-home {
@@ -268,6 +269,7 @@
     background-color: aliceblue;
     box-shadow:  -2px 0 4px hsl(0 4% 15% / 10%);
     /* transition: 0.3s; */
+    display: none;
 }
 
 .cart.active {
